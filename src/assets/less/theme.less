@@ -1,0 +1,157 @@
+@import '~iview/src/styles/index.less';
+@import "config.less";
+// 按钮
+.ivu-btn-primary:hover {
+    background-color: #3ca6a1e8 !important;
+    border-color: #3ca6a1e8 !important;
+}
+
+.ivu-btn-primary&.ivu-btn[disabled] {
+    background-color: #cbcbcb !important;
+    border-color: #cbcbcb !important;
+    color: #fff !important;
+}
+
+.ivu-btn-primary&.ivu-btn[disabled]:hover {
+    background-color: #cbcbcb !important;
+    border-color: #cbcbcb !important;
+    color: #fff !important;
+}
+
+.ivu-btn-ghost:hover {
+    border-color: #60c6c2 !important;
+    color: #60c6c2 !important;
+}
+
+.ivu-btn-ghost {
+    &.err {
+        color: #ff8080 !important;
+        border-color: #ff8080 !important;
+    }
+    &.err:hover {
+        border-color: #ff8f8f !important;
+        background-color: #ffe5e5 !important;
+        color: #ff8f8f !important;
+    }
+    &.err&.ivu-btn[disabled] {
+        border-color: #ffe3e3 !important;
+        background-color: #ffffff !important;
+        color: #ffe3e3 !important;
+    }
+}
+
+.ivu-btn-ghost&.ivu-btn[disabled] {
+    background-color: #fff !important;
+    color: #cccccc !important;
+    border-color: #cccccc !important;
+}
+
+.ivu-btn-error:hover {
+    background-color: #e57373 !important;
+    border-color: #e57373 !important;
+}
+
+
+/*面包屑样式*/
+
+.ivu-breadcrumb-item-separator {
+    color: #aaa;
+}
+
+
+/* 表格焦点样式 */
+
+.ivu-table-row-hover {
+    background-color: #eaeaea;
+}
+
+
+/*表格高度改为35ps*/
+
+.ivu-table td {
+    height: 35px;
+}
+
+a {
+    color: #41b3ae !important;
+}
+.ivu-page-item a{
+    color: #495060 !important;
+}
+.ivu-page-item-active a, .ivu-page-item-active:hover a{
+    color: #fff !important;
+}
+.ivu-page-next a,.ivu-page-prev a{
+    color: #666 !important;
+    
+}
+/* 表格没有数据时的默认图片 */
+
+.ivu-table-tip table td span {
+    background: url("../img/public/tableDataEmpty.png");
+    padding-bottom: 50px;
+    display: inline-block;
+    padding-top: 160px;
+    color: #aaa;
+    background-repeat: no-repeat;
+    background-position: center 40px;
+    min-width: 200px;
+}
+
+.ivu-tabs-nav .ivu-tabs-tab:hover {
+    color: #44bcb7;
+}
+
+.ivu-tabs-bar {
+    margin-bottom: 0 !important;
+}
+
+.ivu-tooltip,
+.ivu-tooltip-rel {
+    display: block;
+}
+
+.ivu-select-item {
+    overflow: hidden;
+    width: 100%;
+}
+
+.ivu-modal {
+    .ivu-modal-content {
+        border-radius: 0;
+    }
+    .ivu-modal-header {
+        background-color: #fafafa;
+    }
+}
+
+.vertical-center-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ivu-modal {
+        top: 0;
+    }
+}
+
+.ivu-form {
+    .ivu-form-item.last-child {
+        margin-bottom: 0;
+    }
+}
+
+.ivu-input {
+    background: #fff;
+}
+
+//.ivu-tooltip-inner {
+//  background: #fff;
+//  font-weight: 400;
+//  color: #000;
+//  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+//  border-color: #eee;
+//}
+//
+//.ivu-tooltip-popper[x-placement^="top"] .ivu-tooltip-arrow {
+//  display: none;
+//}
